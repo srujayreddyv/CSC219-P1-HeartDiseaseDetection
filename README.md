@@ -4,27 +4,27 @@ Welcome to our team's machine learning project aimed at detecting heart disease.
 ## Dataset
 We used a comprehensive heart disease dataset obtained from IEEE DataPort. This dataset contains information from multiple sources, including 11 common features relevant to heart disease diagnosis. Understanding the dataset's documentation was crucial to our work.
 
-## Data Preprocessing: The data preprocessing steps included:
-Train-test split.
-Handling missing values.
-Removing duplicates.
-Encoding categorical features.
-Normalizing numeric features.
-Machine Learning Models
+## Data Preprocessing: 
+The data preprocessing steps included:
 
-## Building Models: We explored three machine learning models for heart disease detection:
+1. Train-test split.
+2. Handling missing values.
+3. Removing duplicates.
+4. Encoding categorical features.
+5. Normalizing numeric features.
+
+## Building Models: 
+We explored three machine learning models for heart disease detection:
+
 Nearest Neighbor: We implemented a k-NN (k-Nearest Neighbors) classifier using scikit-learn and evaluated its performance.
-
 Support Vector Machine (SVM): 
 We built an SVM (Support Vector Machine) classifier using scikit-learn and assessed its classification performance.
-
 Fully-Connected Neural Networks: We created a fully connected neural network using TensorFlow and Keras. We used Bayesian optimization to fine-tune hyperparameters, including activation functions, neuron counts, and optimizers.
-
 Hyperparameter Tuning: We employed KerasTuner to find the optimal combination of hyperparameters for the fully connected neural network model. Hyperparameters included activation functions (e.g., relu, tanh), neuron counts, and optimizers (e.g., adam, sgd).
 
-## Additional Features: We explored the following additional features:
+## Additional Features: 
+We explored the following additional features:
+
 Feature Importance Analysis: Identifying the most important features using logistic regression and training models with only the top features.
-
 K-Means Clustering: Applying K-means clustering to the training set and using centroids to classify records in the test set.
-
 Balanced Dataset: Creating a more balanced dataset using oversampling or undersampling techniques to mitigate class imbalance.
