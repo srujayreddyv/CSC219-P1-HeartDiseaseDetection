@@ -1,30 +1,30 @@
 # CSC219 PROJECT: 1 Heart Disease Detection using Neural Networks
-
-Welcome to our team's machine learning project aimed at detecting heart disease. In this collaborative effort, we have tackled the crucial issue of heart disease detection using tabular data, which includes both categorical and numeric features. We've formulated this problem as a binary classification task, with the goal of predicting the presence (1) or absence (0) of heart disease. Throughout this project, we've explored various machine learning algorithms and rigorously evaluated their performance using essential metrics such as precision, recall, F1-score, along with generating insightful visualizations like confusion matrices and ROC curves.
+Welcome to our collaborative machine learning project aimed at detecting heart disease. In this project, we have addressed the critical issue of heart disease detection using tabular data, encompassing both categorical and numeric features. Our primary objective was to solve this problem as a binary classification task, distinguishing between the presence (1) or absence (0) of heart disease. Throughout our endeavor, we have explored various machine learning algorithms and conducted thorough evaluations based on essential metrics like precision, recall, F1-score. Additionally, we have provided insightful visualizations, including confusion matrices and ROC curves, to assess model performance.
 
 ## Dataset
-We used a comprehensive heart disease dataset obtained from IEEE DataPort. This dataset contains information from multiple sources, including 11 common features relevant to heart disease diagnosis. Understanding the dataset's documentation was crucial to our work.
+To facilitate our heart disease detection task, we utilized a comprehensive heart disease dataset obtained from IEEE DataPort. This dataset amalgamates information from multiple sources and encompasses 11 common features relevant to heart disease diagnosis. Our work heavily relied on a profound understanding of the dataset's documentation.
 
 ## Data Preprocessing: 
-The data preprocessing steps included:
+Our data preprocessing pipeline comprised several essential steps:
 
-1. Train-test split.
-2. Handling missing values.
-3. Removing duplicates.
-4. Encoding categorical features.
-5. Normalizing numeric features.
+1. Handling missing values: Any missing data points were appropriately handled to ensure data integrity.
+2. Removing duplicates: Duplicate entries were identified and removed to maintain data consistency.
+3. Encoding categorical features: Categorical features were encoded to make them compatible with machine learning algorithms.
+4. Normalizing numeric features: Numeric features were normalized to ensure they were on the same scale, preventing any particular feature from dominating the learning process.
+5. Train-test split: We partitioned the dataset into training and testing subsets.
 
 ## Building Models: 
-We explored three machine learning models for heart disease detection:
+We explored three machine learning models for heart disOur project ventured into the realm of machine learning by exploring three distinct models for heart disease detection:
+1. Nearest Neighbor: We implemented a k-NN (k-Nearest Neighbors) classifier using scikit-learn and meticulously evaluated its performance.
+2. Support Vector Machine (SVM): Leveraging scikit-learn, we constructed an SVM (Support Vector Machine) classifier and conducted an in-depth assessment of its classification performance.
+3. Fully-Connected Neural Networks: To harness the power of deep learning, we designed and trained a fully connected neural network using TensorFlow and Keras. Our model tuning process involved Bayesian optimization, which allowed us to optimize hyperparameters, including activation functions, neuron counts, and optimizers.
 
-1. Nearest Neighbor: We implemented a k-NN (k-Nearest Neighbors) classifier using scikit-learn and evaluated its performance.
-2. Support Vector Machine (SVM): We built an SVM (Support Vector Machine) classifier using scikit-learn and assessed its classification performance.
-3. Fully-Connected Neural Networks: We created a fully connected neural network using TensorFlow and Keras. We used Bayesian optimization to fine-tune hyperparameters, including activation functions, neuron counts, and optimizers.
-4. Hyperparameter Tuning: We employed KerasTuner to find the optimal combination of hyperparameters for the fully connected neural network model. Hyperparameters included activation functions (e.g., relu, tanh), neuron counts, and optimizers (e.g., adam, sgd).
+## Hyperparameter Tuning
+Hyperparameter tuning played a pivotal role in enhancing our model's performance. We utilized KerasTuner to systematically explore and identify the optimal combination of hyperparameters for our fully connected neural network model. These hyperparameters included activation functions such as relu and tanh, neuron counts, and optimizers like adam and sgd.
 
-## Additional Features: 
-We explored the following additional features:
+## Additional Features
+In our quest to further improve our heart disease detection models, we explored the following additional features:
 
-1. Feature Importance Analysis: Identifying the most important features using logistic regression and training models with only the top features.
-2. K-Means Clustering: Applying K-means clustering to the training set and using centroids to classify records in the test set.
-3. Balanced Dataset: Creating a more balanced dataset using oversampling or undersampling techniques to mitigate class imbalance.
+1. Feature Importance Analysis: We conducted a feature importance analysis, utilizing logistic regression to identify the most influential features. Subsequently, we trained models exclusively on these top features.
+2. K-Means Clustering: We applied K-means clustering to the training dataset, leveraging the centroids to classify records in the test set.
+3. Balanced Dataset: Recognizing the potential bias stemming from class imbalance, we implemented oversampling and undersampling techniques to create a more balanced dataset, mitigating this issue.
